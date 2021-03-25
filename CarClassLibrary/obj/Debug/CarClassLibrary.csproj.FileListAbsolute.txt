@@ -1,0 +1,6 @@
+E:\Kursevi\c# i .net\YT kurs\Projekti\CarStore\car-store\CarClassLibrary\bin\Debug\CarClassLibrary.dll
+E:\Kursevi\c# i .net\YT kurs\Projekti\CarStore\car-store\CarClassLibrary\bin\Debug\CarClassLibrary.pdb
+E:\Kursevi\c# i .net\YT kurs\Projekti\CarStore\car-store\CarClassLibrary\obj\Debug\CarClassLibrary.csprojAssemblyReference.cache
+E:\Kursevi\c# i .net\YT kurs\Projekti\CarStore\car-store\CarClassLibrary\obj\Debug\CarClassLibrary.csproj.CoreCompileInputs.cache
+E:\Kursevi\c# i .net\YT kurs\Projekti\CarStore\car-store\CarClassLibrary\obj\Debug\CarClassLibrary.dll
+E:\Kursevi\c# i .net\YT kurs\Projekti\CarStore\car-store\CarClassLibrary\obj\Debug\CarClassLibrary.pdb
