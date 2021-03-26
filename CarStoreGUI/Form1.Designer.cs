@@ -30,13 +30,13 @@ namespace CarStoreGUI
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_make = new System.Windows.Forms.TextBox();
-            this.txt_model = new System.Windows.Forms.TextBox();
-            this.txt_price = new System.Windows.Forms.TextBox();
             this.btn_create_car = new System.Windows.Forms.Button();
+            this.txt_price = new System.Windows.Forms.TextBox();
+            this.txt_model = new System.Windows.Forms.TextBox();
+            this.txt_make = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lst_inventory = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -66,23 +66,37 @@ namespace CarStoreGUI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Create car:";
             // 
-            // label1
+            // btn_create_car
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Make";
+            this.btn_create_car.Location = new System.Drawing.Point(23, 132);
+            this.btn_create_car.Name = "btn_create_car";
+            this.btn_create_car.Size = new System.Drawing.Size(189, 24);
+            this.btn_create_car.TabIndex = 6;
+            this.btn_create_car.Text = "Create car";
+            this.btn_create_car.UseVisualStyleBackColor = true;
+            this.btn_create_car.Click += new System.EventHandler(this.btn_create_car_Click);
             // 
-            // label2
+            // txt_price
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Model";
+            this.txt_price.Location = new System.Drawing.Point(61, 80);
+            this.txt_price.Name = "txt_price";
+            this.txt_price.Size = new System.Drawing.Size(100, 20);
+            this.txt_price.TabIndex = 5;
+            this.txt_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_price_KeyPress);
+            // 
+            // txt_model
+            // 
+            this.txt_model.Location = new System.Drawing.Point(61, 48);
+            this.txt_model.Name = "txt_model";
+            this.txt_model.Size = new System.Drawing.Size(100, 20);
+            this.txt_model.TabIndex = 4;
+            // 
+            // txt_make
+            // 
+            this.txt_make.Location = new System.Drawing.Point(61, 20);
+            this.txt_make.Name = "txt_make";
+            this.txt_make.Size = new System.Drawing.Size(100, 20);
+            this.txt_make.TabIndex = 3;
             // 
             // label3
             // 
@@ -93,36 +107,23 @@ namespace CarStoreGUI
             this.label3.TabIndex = 2;
             this.label3.Text = "Price";
             // 
-            // txt_make
+            // label2
             // 
-            this.txt_make.Location = new System.Drawing.Point(61, 20);
-            this.txt_make.Name = "txt_make";
-            this.txt_make.Size = new System.Drawing.Size(100, 20);
-            this.txt_make.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Model";
             // 
-            // txt_model
+            // label1
             // 
-            this.txt_model.Location = new System.Drawing.Point(61, 48);
-            this.txt_model.Name = "txt_model";
-            this.txt_model.Size = new System.Drawing.Size(100, 20);
-            this.txt_model.TabIndex = 4;
-            // 
-            // txt_price
-            // 
-            this.txt_price.Location = new System.Drawing.Point(61, 80);
-            this.txt_price.Name = "txt_price";
-            this.txt_price.Size = new System.Drawing.Size(100, 20);
-            this.txt_price.TabIndex = 5;
-            // 
-            // btn_create_car
-            // 
-            this.btn_create_car.Location = new System.Drawing.Point(23, 132);
-            this.btn_create_car.Name = "btn_create_car";
-            this.btn_create_car.Size = new System.Drawing.Size(189, 24);
-            this.btn_create_car.TabIndex = 6;
-            this.btn_create_car.Text = "Create car";
-            this.btn_create_car.UseVisualStyleBackColor = true;
-            this.btn_create_car.Click += new System.EventHandler(this.btn_create_car_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Make";
             // 
             // groupBox2
             // 
@@ -212,6 +213,7 @@ namespace CarStoreGUI
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
