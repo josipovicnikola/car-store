@@ -36,7 +36,7 @@ namespace CarStoreGUI
                 txt_price.Clear();
             } else
             {
-                MessageBox.Show("Price must be number.");
+                MessageBox.Show("Price must be number . ");
             }
 
         }
